@@ -28,8 +28,8 @@ export const MemberCard = ({ member }: MemberCardProps) => {
   };
 
   return (
-    <div className="flex flex-col gap-8 border border-gray-200 px-[40px] py-[30px] sm:h-[350px] sm:flex-row">
-      <div className="mx-auto flex aspect-[240/350] w-full max-w-[140px] flex-shrink-0 items-center justify-center bg-gray-100 sm:mx-0 sm:aspect-auto sm:h-full sm:w-[240px] sm:max-w-none">
+    <div className="flex flex-col gap-6 border border-gray-200 px-[28px] py-[21px] sm:h-[245px] sm:flex-row">
+      <div className="mx-auto flex aspect-[240/350] w-full max-w-[140px] flex-shrink-0 items-center justify-center bg-gray-100 sm:mx-0 sm:h-full sm:w-auto sm:max-w-none">
         {photoSrc && !photoFailed ? (
           <img
             src={photoSrc}
@@ -53,7 +53,10 @@ export const MemberCard = ({ member }: MemberCardProps) => {
           <div className="w-20 bg-primary" />
           <div className="flex-1 bg-gray-200" />
         </div>
-        <p className="mt-2 break-words text-gray-700 font-medium">{member.position}</p>
+        {member.degree && (
+          <p className="mt-2 break-words text-sm text-gray-500">{member.degree}</p>
+        )}
+        <p className={`${member.degree ? '' : 'mt-2 '}break-words text-gray-700 font-medium`}>{member.position}</p>
         {member.email && (
           <div className="mt-2 flex min-w-0 items-center gap-1 text-gray-500">
             <Mail size={14} className="flex-shrink-0" />
