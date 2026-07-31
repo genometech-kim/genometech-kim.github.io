@@ -55,7 +55,7 @@ Claude Code에서 `/start-work`를 실행합니다. 새로운 작업을 시작�
 
 - 작업 중간에 저장할 때에는 `/save-progress`를 실행합니다. 지금까지의 변경 내용을 commit합니다.
 - 작업이 완전히 끝났으면 `/finish-work`를 실행합니다. 남은 변경사항을 커밋하고 브랜치를 저장소에 push 합니다.
-- [원격 저장소](https://github.com/crispr-hanyang/crispr-hanyang.github.io)로 이동합니다.
+- [원격 저장소](https://github.com/genometech-kim/genometech-kim.github.io)로 이동합니다.
 - `Pull request(PR)` 메뉴로 이동합니다. 조금 기다리면 자동으로 PR이 생성됩니다.
 - 내 작업에 관련된 PR을 클릭하고, 이상이 없으면 초록색 `Merge pull request` 버튼을 클릭하면 내 작업이 `develop`에 먼저 반영됩니다. 아직 홈페이지에 반영되지는 않은 상태입니다.
 - 잠시 기다리면 또 하나의 PR이 자동으로 생성됩니다. 이상이 없으면 초록색 `Merge pull request` 버튼을 클릭합니다. 내 작업이 `main`에 반영됩니다.
