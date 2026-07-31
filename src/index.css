@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+@theme {
+  /* 메인 폰트 */
+  --font-sans: 'SUIT', sans-serif;
+  --font-nanum-light: 'NanumGothicLight', sans-serif;
+  --font-nanum: 'NanumGothic', sans-serif;
+  --font-nanum-bold: 'NanumGothicBold', sans-serif;
+  --font-nanum-extrabold: 'NanumGothicExtraBold', sans-serif;
+  --font-suit: 'SUIT', sans-serif;
+
+  --breakpoint-xs: 480px;
+  --breakpoint-cards: 1180px;
+
+  --color-primary: #004c86;
+
+  --animate-marquee: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

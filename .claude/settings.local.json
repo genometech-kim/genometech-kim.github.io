@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C \"/Users/heonseokkim/Library/Mobile Documents/com~apple~CloudDocs/Hanyang/연구실관련/Genometech-Kim.github.io-develop\" status)",
+      "Bash(gh auth *)",
+      "Bash(gh repo *)",
+      "Bash(git init *)",
+      "Bash(git config *)",
+      "Bash(git remote *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git count-objects *)"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null); if [ \"$branch\" = \"main\" ] || [ \"$branch\" = \"develop\" ]; then jq -n --arg reason \"지금 브랜치가 \\\"$branch\\\"입니다. main/develop에서는 직접 코드를 수정하지 않는 게 이 프로젝트 원칙입니다. /start-work로 새 브랜치를 만드는 걸 권장해요. 그래도 계속할까요?\" '{hookSpecificOutput: {hookEventName: \"PreToolUse\", permissionDecision: \"ask\", permissionDecisionReason: $reason}}'; fi"
+          }
+        ]
+      }
+    ]
+  }
+}
