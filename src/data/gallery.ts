@@ -25,6 +25,13 @@ export interface GalleryPost {
 
 export const gallery: GalleryPost[] = [
   {
+    id: 11,
+    title: '테스트',
+    uploadDate: '2026.08.31',
+    imageCount: 2,
+    text: '테스트 사진입니다',
+  },
+  {
     id: 10,
     title: '2026.05 KSBMB International Conference',
     uploadDate: '2026.06.02',
