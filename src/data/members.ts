@@ -102,6 +102,12 @@ export const members: Member[] = [
     position: 'Graduated',
     email: 'kangsj417@gmail.com',
   },
+  {
+    nameKo: '홍길동',
+    nameEn: 'Hong Gildong',
+    position: 'Intern',
+    email: 'gildong@hanyang.ac.kr',
+  },
 ];
 
 /**
